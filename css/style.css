@@ -1,0 +1,423 @@
+@charset "UTF-8";
+/* CSS Document */
+/*--------------------------------------------------------------------
+  mixin
+--------------------------------------------------------------------*/
+/*--------------------------------------------------------------------
+  reset
+--------------------------------------------------------------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@media screen and (max-width: 640px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+
+body {
+  line-height: 1;
+  font-family: 'Yu Mincho', Georgia, 'Hiragino Mincho ProN', serif;
+  font-size: 1.0rem;
+}
+
+.clearfix:after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+@media screen and (max-width: 640px) {
+  * {
+    box-sizing: border-box;
+  }
+}
+/*--------------------------------------------------------------------
+  header
+--------------------------------------------------------------------*/
+#header {
+  background: #181b39;
+}
+#header #header-inner {
+  width: 1300px;
+  margin: 0 auto;
+  padding: 35px 0;
+}
+#header #header-inner #logo {
+  float: left;
+}
+#header #header-inner #g-nav .g-nav-list {
+  float: right;
+  padding-bottom: 20px;
+  margin-top: -10px;
+}
+#header #header-inner #g-nav .g-nav-list li {
+  float: left;
+  padding: 10px 0 0;
+  text-align: center;
+  position: relative;
+  width: 181px;
+}
+#header #header-inner #g-nav .g-nav-list li a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  padding-top: 15px;
+  letter-spacing: 1px;
+}
+#header #header-inner #g-nav .g-nav-list li .make_border {
+  width: 70px;
+  height: 3px;
+  background: #ecc92d;
+  margin: auto;
+  opacity: 0;
+}
+#header #header-inner #g-nav .g-nav-list .sub-menu {
+  position: absolute;
+  z-index: 10000;
+  background: #181b39;
+  display: none;
+}
+#header #header-inner #g-nav .g-nav-list .sub-menu li {
+  float: none;
+  padding: 15px 0;
+  border-bottom: 1px solid #ecc92d;
+}
+#header #header-inner #g-nav .g-nav-list .sub-menu li a {
+  font-size: 16px;
+  padding-top: 0;
+}
+#header #header-inner #g-nav .g-nav-list .sub-menu li:first-child {
+  margin-top: 20px;
+}
+#header #header-inner #g-nav .g-nav-list .sub-menu li:last-child {
+  border-bottom: none;
+}
+
+/*--------------------------------------------------------------------
+  main
+--------------------------------------------------------------------*/
+.slide-wrapper img {
+  width: 100%;
+}
+
+/*--------------------------------------------------------------------
+  news
+--------------------------------------------------------------------*/
+#news {
+  background: #f2f2f2;
+  padding-bottom: 60px;
+}
+#news #news-inner h2 {
+  text-align: center;
+  padding: 60px 0 30px;
+}
+#news #news-inner table {
+  width: 850px;
+  margin: 0 auto;
+  font-family: Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
+  font-size: 18px;
+}
+#news #news-inner table th {
+  padding: 20px 30px;
+  border-bottom: 1px dotted #ccc;
+  letter-spacing: 3px;
+}
+#news #news-inner table td {
+  padding: 20px 20px 20px 0;
+  border-bottom: 1px dotted #ccc;
+}
+#news #news-inner table td a {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 754px;
+  display: block;
+  text-decoration: none;
+  color: #000;
+  letter-spacing: 3px;
+}
+#news #news-inner table td a:hover {
+  text-decoration: underline;
+}
+
+/*--------------------------------------------------------------------
+  lowyer
+--------------------------------------------------------------------*/
+#lowyers {
+  background: #000;
+  padding-top: 50px;
+}
+#lowyers h2 {
+  text-align: center;
+  padding-bottom: 30px;
+}
+#lowyers .concept {
+  text-align: center;
+  margin-left: 100px;
+  padding-bottom: 50px;
+}
+#lowyers .lowyers-list {
+  display: -webkit-box;
+  /*--- Androidブラウザ用 ---*/
+  display: -ms-flexbox;
+  /*--- IE10 ---*/
+  display: -webkit-flex;
+  /*--- safari（PC）用 ---*/
+  display: flex;
+  -webkit-box-pack: justify;
+  /*--- Androidブラウザ用 ---*/
+  -ms-flex-pack: justify;
+  /*--- IE10 ---*/
+  -webkit-justify-content: space-between;
+  /*--- safari（PC）用 ---*/
+  justify-content: space-between;
+  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+}
+#lowyers .lowyers-list li {
+  width: 33.33333%;
+}
+#lowyers .lowyers-list li img {
+  width: 100%;
+  display: block;
+}
+
+/*--------------------------------------------------------------------
+  guide
+--------------------------------------------------------------------*/
+#guide {
+  background: #ccc;
+  padding-top: 60px;
+}
+#guide h2 {
+  text-align: center;
+  padding-bottom: 30px;
+}
+#guide .guide-list {
+  display: -webkit-box;
+  /*--- Androidブラウザ用 ---*/
+  display: -ms-flexbox;
+  /*--- IE10 ---*/
+  display: -webkit-flex;
+  /*--- safari（PC）用 ---*/
+  display: flex;
+  -webkit-box-pack: justify;
+  /*--- Androidブラウザ用 ---*/
+  -ms-flex-pack: justify;
+  /*--- IE10 ---*/
+  -webkit-justify-content: space-between;
+  /*--- safari（PC）用 ---*/
+  justify-content: space-between;
+  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  width: 1055px;
+  margin: 0 auto;
+}
+#guide .guide-list li {
+  width: 516px;
+  margin-bottom: 20px;
+}
+#guide .guide-list li a:hover {
+  opacity: .7;
+}
+#guide .guide-list li img {
+  width: 100%;
+}
+
+/*--------------------------------------------------------------------
+  contact
+--------------------------------------------------------------------*/
+#contact {
+  background: #f2f2f2;
+  padding-top: 30px;
+}
+#contact h2 {
+  text-align: center;
+}
+#contact .contact-list {
+  display: -webkit-box;
+  /*--- Androidブラウザ用 ---*/
+  display: -ms-flexbox;
+  /*--- IE10 ---*/
+  display: -webkit-flex;
+  /*--- safari（PC）用 ---*/
+  display: flex;
+  -webkit-box-pack: justify;
+  /*--- Androidブラウザ用 ---*/
+  -ms-flex-pack: justify;
+  /*--- IE10 ---*/
+  -webkit-justify-content: space-between;
+  /*--- safari（PC）用 ---*/
+  justify-content: space-between;
+  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  width: 1000px;
+  margin: 0 auto;
+}
+#contact .contact-list li {
+  width: 480px;
+  margin-bottom: 40px;
+}
+#contact .contact-list li a:hover {
+  opacity: .7;
+}
+#contact .contact-list li img {
+  width: 100%;
+}
+
+/*--------------------------------------------------------------------
+  access
+--------------------------------------------------------------------*/
+#access {
+  background: #000;
+  padding-top: 30px;
+}
+#access h2 {
+  text-align: center;
+  padding-bottom: 30px;
+}
+#access .address {
+  font-size: 18px;
+  color: #fff;
+  width: 600px;
+  margin: 0 auto;
+  line-height: 1.8;
+  font-family: Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
+  padding-bottom: 40px;
+}
+#access iframe {
+  width: 100%;
+}
+#access #before {
+  position: relative;
+}
+#access #before:before {
+  content: url(../img/home/map_icon.png);
+  position: absolute;
+  width: 127px;
+  margin: auto;
+  left: 0;
+  right: 0;
+}
+
+/*--------------------------------------------------------------------
+  footer
+--------------------------------------------------------------------*/
+#footer {
+  background: #000;
+}
+#footer #footer-inner {
+  width: 1300px;
+  margin: 0 auto;
+  padding: 35px 0;
+  overflow: hidden;
+}
+#footer #footer-inner #logo {
+  float: left;
+}
+#footer #footer-inner #g-nav {
+  width: 100%;
+}
+#footer #footer-inner #g-nav .footer-menu {
+  float: right;
+}
+#footer #footer-inner #g-nav .footer-menu li {
+  float: left;
+  padding: 0 20px;
+}
+#footer #footer-inner #g-nav .footer-menu li a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  padding-top: 15px;
+  letter-spacing: 1px;
+}
+#footer #footer-inner #g-nav .footer-menu li a:hover {
+  opacity: .7;
+}
+#footer #footer-inner #g-nav .make_border {
+  width: 850px;
+  height: 1px;
+  background: #fff;
+  margin: 20px 40px 0 0;
+  float: right;
+}
+#footer #footer-inner #g-nav .sub-menu {
+  clear: both;
+  margin-left: 520px;
+}
+#footer #footer-inner #g-nav .sub-menu li {
+  padding: 5px 30px;
+}
+#footer #footer-inner #g-nav .sub-menu li a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  padding-top: 15px;
+  letter-spacing: 1px;
+}
+#footer #footer-inner #g-nav .sub-menu li a:hover {
+  opacity: .7;
+}
+
+/*--------------------------------------------------------------------
+  copyright
+--------------------------------------------------------------------*/
+#copyright {
+  background: #666;
+  padding: 25px 0;
+}
+#copyright .copy {
+  color: #000;
+  text-align: center;
+  font-size: 12px;
+}
+
+/*# sourceMappingURL=style.css.map */
