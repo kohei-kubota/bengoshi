@@ -17,33 +17,33 @@
 <body>
 	<header id="header" class="clearfix">
 		<div id="header-inner">
-			<h1 id="logo"><a href="/"><img src="img/common/logo.png" alt=""></a></h1>
+			<h1 id="logo"><a href="/"><img src="/img/common/logo.png" alt=""></a></h1>
 			<nav id="g-nav">
 				<ul class="g-nav-list">
 					<li>
 						<div class="make_border"></div>
-						<a href="">事務所のご案内</a>
+						<a href="/guide">事務所のご案内</a>
 					</li>
 					<li id="belong-lowyers">
 						<div class="make_border"></div>
-						<a href="#">弁護士のご紹介</a>
+						<a href="/wakai">弁護士のご紹介</a>
 						<ul class="sub-menu">
-							<li><a href="">弁護士・若井 亮</a></li>
-							<li><a href="">弁護士・小杉 俊介</a></li>
-							<li><a href="">弁護士・吉田 圭二</a></li>
+							<li><a href="/wakai">弁護士・若井 亮</a></li>
+							<li><a href="/kosugi">弁護士・小杉 俊介</a></li>
+							<li><a href="/yoshida">弁護士・吉田 圭二</a></li>
 						</ul>
 					</li>
 					<li>
 						<div class="make_border"></div>
-						<a href="">取り扱い分野</a>
+						<a href="/degree">取り扱い分野</a>
 					</li>
 					<li>
 						<div class="make_border"></div>
-						<a href="">弁護士費用</a>
+						<a href="/cost">弁護士費用</a>
 					</li>
 					<li>
 						<div class="make_border"></div>
-						<a href="">お問い合わせ</a>
+						<a href="/contact">お問い合わせ</a>
 					</li>
 				</ul>
 			</nav>
@@ -107,9 +107,9 @@
 			<h2><img src="img/home/lowyers.png" alt=""></h2>
 			<p class="concept"><img src="img/home/concept.png" alt=""></p>
 			<ul class="lowyers-list">
-				<li><a href=""><img src="img/home/lowyers01_off.png" onmouseover="this.src='img/home/lowyers01.png'" onmouseout="this.src='img/home/lowyers01_off.png'" alt=""></a></li>
-				<li><a href=""><img src="img/home/lowyers02_off.png" onmouseover="this.src='img/home/lowyers02.png'" onmouseout="this.src='img/home/lowyers02_off.png'" alt="" alt=""></a></li>
-				<li><a href=""><img src="img/home/lowyers03_off.png" onmouseover="this.src='img/home/lowyers03.png'" onmouseout="this.src='img/home/lowyers03_off.png'" alt="" alt=""></a></li>
+				<li><a href="/wakai"><img src="img/home/lowyers01_off.png" onmouseover="this.src='img/home/lowyers01.png'" onmouseout="this.src='img/home/lowyers01_off.png'" alt=""></a></li>
+				<li><a href="/kosugi"><img src="img/home/lowyers02_off.png" onmouseover="this.src='img/home/lowyers02.png'" onmouseout="this.src='img/home/lowyers02_off.png'" alt="" alt=""></a></li>
+				<li><a href="/yoshida"><img src="img/home/lowyers03_off.png" onmouseover="this.src='img/home/lowyers03.png'" onmouseout="this.src='img/home/lowyers03_off.png'" alt="" alt=""></a></li>
 			</ul>
 		</div>
 	</section>
@@ -118,10 +118,10 @@
 		<div id="guide-inner">
 			<h2><img src="img/home/guide.png" alt=""></h2>
 			<ul class="guide-list">
-				<li><a href=""><img src="img/home/guide01.png" alt=""></a></li>
-				<li><a href=""><img src="img/home/guide02.png" alt=""></a></li>
-				<li><a href=""><img src="img/home/guide03.png" alt=""></a></li>
-				<li><a href=""><img src="img/home/guide04.png" alt=""></a></li>
+				<li><a href="/guide"><img src="img/home/guide01.png" alt=""></a></li>
+				<li><a href="/degree"><img src="img/home/guide02.png" alt=""></a></li>
+				<li><a href="/cost"><img src="img/home/guide03.png" alt=""></a></li>
+				<li><a href="/contact"><img src="img/home/guide04.png" alt=""></a></li>
 			</ul>
 		</div>
 	</section>
@@ -131,7 +131,7 @@
 			<h2><img src="img/home/contact.png" alt=""></h2>
 			<ul class="contact-list">
 				<li><a href=""><img src="img/home/contact01.png" alt=""></a></li>
-				<li><a href=""><img src="img/home/contact02.png" alt=""></a></li>
+				<li><a href="/contact"><img src="img/home/contact02.png" alt=""></a></li>
 			</ul>
 		</div>
 	</section>
@@ -151,33 +151,33 @@
 
 	<section id="footer">
 		<div id="footer-inner">
-			<h1 id="logo"><a href="/"><img src="img/common/logo.png" alt=""></a></h1>
+			<h1 id="logo"><a href="/"><img src="/img/common/logo.png" alt=""></a></h1>
 			<nav id="g-nav">
 				<ul class="footer-menu">
 					<li>
-						<a href="">事務所のご案内</a>
+						<a href="/guide">事務所のご案内</a>
 					</li>
 					<li>
-						<a href="">弁護士のご紹介</a>
+						<a href="/wakai">弁護士のご紹介</a>
 					</li>
 					<li>
-						<a href="">取り扱い分野</a>
+						<a href="/degree">取り扱い分野</a>
 					</li>
 					<li>
-						<a href="">弁護士費用</a>
+						<a href="/cost">弁護士費用</a>
 					</li>
 					<li>
-						<a href="">お問い合わせ</a>
+						<a href="/contact">お問い合わせ</a>
 					</li>
 					<li>
-						<a href="">サイトマップ</a>
+						<a href="/sitemap">サイトマップ</a>
 					</li>
 				</ul>
 				<div class="make_border"></div>
 				<ul class="sub-menu">
-					<li><a href="">弁護士・若井 亮</a></li>
-					<li><a href="">弁護士・小杉 俊介</a></li>
-					<li><a href="">弁護士・吉田 圭二</a></li>
+					<li><a href="/wakai">弁護士・若井 亮</a></li>
+					<li><a href="/kosugi">弁護士・小杉 俊介</a></li>
+					<li><a href="/yoshida">弁護士・吉田 圭二</a></li>
 				</ul>
 			</nav>
 		</div>
