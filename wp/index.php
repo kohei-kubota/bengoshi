@@ -2,19 +2,19 @@
 
 	<div class="slide-wrapper slider">
 	    <div>
-	        <img src="img/home/main01.png" alt="">
+	        <img src="/img/home/main01.png" alt="">
 	    </div>
 	    <div>
-	        <img src="img/home/main02.png" alt="">
+	        <img src="/img/home/main02.png" alt="">
 	    </div>
 	    <div>
-	        <img src="img/home/main03.png" alt="">
+	        <img src="/img/home/main03.png" alt="">
 	    </div>
 	</div>
 
 	<section id="news">
 		<div id="news-inner">
-			<h2><img src="img/home/news.png" alt=""></h2>
+			<h2><img src="/img/home/news.png" alt=""></h2>
 			<table>
 			<?php if (have_posts()) :
 			while (have_posts()) : the_post(); ?>
@@ -41,41 +41,41 @@
 
 	<section id="lowyers">
 		<div id="lowyers-inner">
-			<h2><img src="img/home/lowyers.png" alt=""></h2>
+			<h2><img src="/img/home/lowyers.png" alt=""></h2>
 			<p class="concept"><img src="img/home/concept.png" alt=""></p>
 			<ul class="lowyers-list">
-				<li><a href="/wakai"><img src="img/home/lowyers01_off.png" onmouseover="this.src='img/home/lowyers01.png'" onmouseout="this.src='img/home/lowyers01_off.png'" alt=""></a></li>
-				<li><a href="/kosugi"><img src="img/home/lowyers02_off.png" onmouseover="this.src='img/home/lowyers02.png'" onmouseout="this.src='img/home/lowyers02_off.png'" alt="" alt=""></a></li>
-				<li><a href="/yoshida"><img src="img/home/lowyers03_off.png" onmouseover="this.src='img/home/lowyers03.png'" onmouseout="this.src='img/home/lowyers03_off.png'" alt="" alt=""></a></li>
+				<li><a href="/wakai"><img src="/img/home/lowyers01_off.png" onmouseover="this.src='/img/home/lowyers01.png'" onmouseout="this.src='/img/home/lowyers01_off.png'" alt=""></a></li>
+				<li><a href="/kosugi"><img src="/img/home/lowyers02_off.png" onmouseover="this.src='/img/home/lowyers02.png'" onmouseout="this.src='/img/home/lowyers02_off.png'" alt=""></a></li>
+				<li><a href="/yoshida"><img src="/img/home/lowyers03_off.png" onmouseover="this.src='/img/home/lowyers03.png'" onmouseout="this.src='/img/home/lowyers03_off.png'" alt=""></a></li>
 			</ul>
 		</div>
 	</section>
 
 	<section id="guide">
 		<div id="guide-inner">
-			<h2><img src="img/home/guide.png" alt=""></h2>
+			<h2><img src="/img/home/guide.png" alt=""></h2>
 			<ul class="guide-list">
-				<li><a href="/guide"><img src="img/home/guide01.png" alt=""></a></li>
-				<li><a href="/degree"><img src="img/home/guide02.png" alt=""></a></li>
-				<li><a href="/cost"><img src="img/home/guide03.png" alt=""></a></li>
-				<li><a href="/contact"><img src="img/home/guide04.png" alt=""></a></li>
+				<li><a href="/guide"><img src="/img/home/guide01.png" alt=""></a></li>
+				<li><a href="/degree"><img src="/img/home/guide02.png" alt=""></a></li>
+				<li><a href="/cost"><img src="/img/home/guide03.png" alt=""></a></li>
+				<li><a href="/contact"><img src="/img/home/guide04.png" alt=""></a></li>
 			</ul>
 		</div>
 	</section>
 
 	<section id="contact">
 		<div id="contact-inner">
-			<h2><img src="img/home/contact.png" alt=""></h2>
+			<h2><img src="/img/home/contact.png" alt=""></h2>
 			<ul class="contact-list">
-				<li><a href=""><img src="img/home/contact01.png" alt=""></a></li>
-				<li><a href="/contact"><img src="img/home/contact02.png" alt=""></a></li>
+				<li><img src="/img/home/contact01.png" alt=""></li>
+				<li><a href="/contact"><img src="/img/home/contact02.png" alt=""></a></li>
 			</ul>
 		</div>
 	</section>
 
 	<section id="access">
 		<div id="access-inner">
-			<h2><img src="img/home/access.png" alt=""></h2>
+			<h2><img src="/img/home/access.png" alt=""></h2>
 			<p class="address">
 				不動法律事務所<br>
 				〒160-0004 東京都新宿区四谷2-4 久保ビル6階

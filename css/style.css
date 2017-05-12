@@ -65,7 +65,7 @@ body {
 }
 @media screen and (max-width: 980px) {
   body {
-    width: 1300px;
+    width: 1235px;
   }
 }
 
@@ -92,7 +92,7 @@ body {
   background: #181b39;
 }
 #header #header-inner {
-  width: 1300px;
+  width: 1235px;
   margin: 0 auto;
   padding: 35px 0;
 }
@@ -389,7 +389,7 @@ body {
   background: #000;
 }
 #footer #footer-inner {
-  width: 1300px;
+  width: 1235px;
   margin: 0 auto;
   padding: 35px 0;
   overflow: hidden;
@@ -427,7 +427,7 @@ body {
 }
 #footer #footer-inner #g-nav .sub-menu {
   clear: both;
-  margin-left: 520px;
+  margin-left: 457px;
 }
 #footer #footer-inner #g-nav .sub-menu li {
   padding: 5px 30px;
@@ -899,6 +899,49 @@ body {
 }
 #article #article-inner .contents p {
   color: #777;
+}
+
+/*--------------------------------------------------------------------
+  issue
+--------------------------------------------------------------------*/
+#issue {
+  padding: 70px 0 50px;
+}
+#issue #issue-inner {
+  width: 1053px;
+  margin: 0 auto;
+}
+#issue #issue-inner .category {
+  margin-bottom: 70px;
+}
+#issue #issue-inner h2 {
+  text-align: center;
+  padding: 15px 0;
+  background: #181b39;
+  font-size: 40px;
+  color: #d1b22f;
+  width: 1053px;
+  margin: 0 auto 20px;
+}
+#issue #issue-inner .concept {
+  padding: 10px 0 0 40px;
+  line-height: 1.9;
+  letter-spacing: 1px;
+  font-family: Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
+}
+#issue #issue-inner .attention {
+  padding: 20px 0 10px 40px;
+  line-height: 1.9;
+  font-family: Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
+}
+#issue #issue-inner .attention:before, #issue #issue-inner .attention:after {
+  content: '';
+  display: inline-block;
+  width: 40px;
+  height: 1px;
+  margin: 0 10px;
+  background-color: #000;
+  vertical-align: middle;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -36,7 +36,7 @@
 	<p class="copy">Copyright©️Allrights reserved 2017.</p>
 </section>
 
-<script src="js/function.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/function.js"></script>
 <script>
 	$('.slide-wrapper').slick({
 		accessibility: false,
@@ -54,5 +54,6 @@
 			map.css('pointer-events', 'none');
 	})
 </script>
+<?php wp_footer(); ?>
 </body>
 </html>

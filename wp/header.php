@@ -2,15 +2,14 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<title></title>
+<title><?php bloginfo('name'); ?></title>
 <meta name="keywords" content="">
-<meta name="description" content="">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="<?php bloginfo('description'); ?>">
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.css">
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
-<link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/slick-theme.css">
 <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
 </head>

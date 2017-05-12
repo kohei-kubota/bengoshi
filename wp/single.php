@@ -47,7 +47,7 @@
 	</header>
 
 	<section id="fv">
-		<img src="/img/cost/banner_fee.png" alt="">
+		<img src="/img/news/banner_news.png" alt="">
 	</section>
 
 	<section id="bread-crumb">
@@ -60,7 +60,25 @@
 
 	<section id="article">
 		<div id="article-inner">
+			<?php if (have_posts()) : // WordPress ループ
+			while (have_posts()) : the_post(); // 繰り返し処理開始 ?>
 			<div class="date-wrapper">
+				<p class="date"><?php echo get_the_date(); ?></p>
+			</div>
+			<h2 class="title">
+				<?php echo get_the_title(); ?>
+			</h2>
+			<div class="contents">
+			<?php the_content(); ?>
+			</div>
+			<?php endwhile; // 繰り返し処理終了
+			else : // ここから記事が見つからなかった場合の処理 ?>
+			<div class="post">
+			<h2>記事はありません</h2>
+			<p>お探しの記事は見つかりませんでした。</p>
+			</div>
+			<?php endif; // WordPress ループ終了 ?>
+			<!-- <div class="date-wrapper">
 				<p class="date">2017.05.30</p>
 			</div>
 			<h2 class="title">
@@ -80,7 +98,7 @@
 <br><br>記事のテキスト記事のテキスト
 
 <br><br>記事のテキスト記事のテキスト記事のテキスト記事のテキスト記事のテキスト
-			</div>
+			</div> -->
 		</div>
 	</section>
 
