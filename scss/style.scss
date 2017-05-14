@@ -259,8 +259,14 @@ body {
 	}
 	.lowyers-list {
 		@include flexbox;
+		@media screen and (max-width: 980px){
+			@include flexbox(center);
+		}
 		li {
 			width: 33.33333%;
+			@media screen and (max-width: 980px){
+				width: 1053px;
+			}
 			img {
 				width: 100%;
 				display: block;
@@ -288,10 +294,17 @@ body {
 		max-width: 1055px;
 		width: 100%;
 		margin: 0 auto;
+		@media screen and (max-width: 980px){
+			@include flexbox(center);
+		}
 		li {
 			max-width: 516px;
 			width: 45%;
 			margin-bottom: 20px;
+			@media screen and (max-width: 980px){
+				max-width: 1053px;
+				width: 95%;
+			}
 			a:hover {
 				opacity: .7;
 			}
@@ -320,9 +333,15 @@ body {
 		max-width: 1000px;
 		width: 100%;
 		margin: 0 auto;
+		@media screen and (max-width: 980px){
+			@include flexbox(center);
+		}
 		li {
 			width: 480px;
 			margin-bottom: 40px;
+			@media screen and (max-width: 980px){
+				width: 95%;
+			}
 			a:hover {
 				opacity: .7;
 			}
@@ -416,6 +435,7 @@ body {
 			.sub-menu {
 				clear: both;
 				margin-left: 457px;
+				display: inline-block;
 				li {
 					padding: 5px 30px;
 					a {
@@ -458,6 +478,8 @@ body {
 	img {
 		max-width: 1404px;
 		width: 100%;
+		display: block;
+		margin: 0 auto;
 	}
 }
 
@@ -545,7 +567,8 @@ body {
 	background: #181b39;
 	padding: 70px 0 50px;
 	#guide-inner {
-		width: 1053px;
+		max-width: 1053px;
+		width: 100%;
 		margin: 0 auto;
 		.iframe {
 			width: 100%;
@@ -559,7 +582,6 @@ body {
 		img {
 			display: block;
 			width: 100%;
-			max-width: 849px;
 			margin: 40px auto;
 		}
 	}
@@ -580,8 +602,14 @@ body {
 		.lowyers-list {
 			margin-top: 50px;
 			@include flexbox;
+			@media screen and (max-width: 980px){
+				@include flexbox(center);
+			}
 			li {
 				width: 33.33333%;
+				@media screen and (max-width: 980px){
+					width: 1053px;
+				}
 				img {
 					width: 100%;
 					display: block;
@@ -731,20 +759,37 @@ body {
 		}
 		.flL {
 			float: left;
+			@media screen and (max-width: 980px){
+				float: none;
+				margin-top: 30px;
+			}
 		}
 		.flR {
 			float: right;
+			@media screen and (max-width: 980px){
+				float: none;
+				margin-top: 30px;
+			}
 		}
 		.thumbnail {
 			margin-right: 40px;
+			@media screen and (max-width: 980px){
+				margin-right: 0;
+			}
 		}
 		.thumbnail02 {
 			margin-left: 40px;
+			@media screen and (max-width: 980px){
+				margin-left: 0;
+			}
 		}
 		.center {
 			max-width: 470px;
 			width: 100%;
 			margin-top: 40px;
+			@media screen and (max-width: 980px){
+				max-width: 100%;
+			}
 		}
 		.discript {
 			color: #f1f1f1;
@@ -774,8 +819,15 @@ body {
 			li {
 				border-bottom: 1px dotted #ccc;
 				padding: 15px 0;
+				@media screen and (max-width: 980px){
+					font-size: 14px;
+				}
 				span {
 					font-weight: bold;
+					@media screen and (max-width: 980px){
+						display: block;
+						margin-bottom: 28px;
+					}
 				}
 			}
 		}
@@ -932,6 +984,191 @@ body {
 		    margin: 0 10px;
 		    background-color: #000;
 		    vertical-align: middle;
+			}
+		}
+	}
+}
+
+/*--------------------------------------------------------------------
+  sitemap
+--------------------------------------------------------------------*/
+#sitemap {
+	width: 1053px;
+	margin: 100px auto;
+	@include flexbox;
+	.sitemap-list {
+		width: 30%;
+		margin-bottom: 40px;
+		@media screen and (max-width: 980px){
+			width: 95%;
+		}
+		h2 {
+			background: #181b39;
+			font-size: 18px;
+			text-align: center;
+			a {
+				color: #fff;
+				text-decoration: none;
+				display: block;
+				padding: 20px 40px;
+				&:hover {
+					opacity: .7;
+				}
+			}
+		}
+		ul {
+			margin-top: 30px;
+			li {
+				margin-bottom: 20px;
+				margin-left: 60px;
+				a {
+					color: #000;
+					text-decoration: none;
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+				&:before {
+					content: url(../img/sitemap/indicator_list_lawyers.png);
+					margin-right: 15px;
+				}
+			}
+		}
+	}
+}
+
+/*--------------------------------------------------------------------
+  contact
+--------------------------------------------------------------------*/
+#tel-contact {
+	background: #181b39;
+	padding: 70px 0 50px;
+	#tel-contact-inner {
+		width: 1053px;
+		margin: 0 auto;
+		h2 {
+			text-align: center;
+			padding: 15px 0;
+			background: #fff;
+			font-size: 40px;
+			color: #d1b22f;
+		}
+		.tel-number {
+			color: #fff;
+			padding: 40px 40px 0;
+			line-height: 1.7;
+			letter-spacing: 1px;
+			font-family: Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
+			width: 600px;
+			margin: 30px auto 0;
+			font-size: 32px;
+			position: relative;
+			text-align: right;
+			&:before {
+				content: url(../img/contact/img_phone.png);
+				margin-right: 20px;
+				position: absolute;
+				top: 24%;
+				left: 30px;
+			}
+		}
+	}
+}
+
+#mail-contact {
+	padding: 70px 0 50px;
+	#mail-contact-inner {
+		width: 1053px;
+		margin: 0 auto;
+		h2 {
+			text-align: center;
+			padding: 15px 0;
+			background: #181b39;
+			font-size: 40px;
+			color: #d1b22f;
+		}
+		.input-form {
+			width: 100%;
+			margin: 20px auto 0;
+			th {
+				text-align: left;
+				vertical-align: top;
+				width: 258px;
+				height: 55px;
+				line-height: 1.7;
+				padding: 15px 10px 5px 20px;
+				background: url(../img/contact/inquery_listbox.png) no-repeat;
+				font-size: 14px;
+				border-top: 1px solid #181b39;
+			}
+			td {
+				padding: 15px 20px 15px;
+				line-height: 1.7;
+				// background: #e4e4e4;
+				.terms {
+					height: 140px;
+					overflow: auto;
+					padding: 10px;
+					font-size: 12px;
+					background: #fff;
+				}
+			}
+			td input[type="text"],td input[type="tel"], td input[type="email"] {
+				width: 100%;
+				padding: 5px;
+				box-sizing: border-box;
+			}
+		}
+		.submit {
+			width: 349px;
+			margin: 0 auto;
+			cursor: pointer;
+			display: block;
+			&:hover {
+				opacity: .7;
+			}
+		}
+	}
+}
+
+/*--------------------------------------------------------------------
+  archive
+--------------------------------------------------------------------*/
+#archive {
+	background: #181b39;
+	#archive-inner {
+		width: 1053px;
+		margin: 0 auto;
+		padding: 50px 0;
+		background: #fff;
+		font-family: Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
+		.date-wrapper {
+			padding: 0 130px;
+		}
+		.date {
+			padding: 7px 15px;
+			background: #181b39;
+			color: #d1b22f;
+			display: inline-block;
+		}
+		.title {
+			font-size: 24px;
+			letter-spacing: 2px;
+			padding: 20px 130px 20px;
+			line-height: 1.9;
+			text-decoration: underline;
+			a {
+				color: #333;
+			}
+		}
+		.contents {
+			padding: 0 60px 40px;
+			margin: 0 70px 30px;
+			border-bottom: 1px dotted #ccc;
+			color: #777;
+			line-height: 1.9;
+			p {
+				color: #777;
 			}
 		}
 	}

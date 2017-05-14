@@ -241,8 +241,33 @@ body {
   flex-wrap: wrap;
   -ms-flex-wrap: wrap;
 }
+@media screen and (max-width: 980px) {
+  #lowyers .lowyers-list {
+    display: -webkit-box;
+    /*--- Androidブラウザ用 ---*/
+    display: -ms-flexbox;
+    /*--- IE10 ---*/
+    display: -webkit-flex;
+    /*--- safari（PC）用 ---*/
+    display: flex;
+    -webkit-box-pack: justify;
+    /*--- Androidブラウザ用 ---*/
+    -ms-flex-pack: justify;
+    /*--- IE10 ---*/
+    -webkit-justify-content: center;
+    /*--- safari（PC）用 ---*/
+    justify-content: center;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+  }
+}
 #lowyers .lowyers-list li {
   width: 33.33333%;
+}
+@media screen and (max-width: 980px) {
+  #lowyers .lowyers-list li {
+    width: 1053px;
+  }
 }
 #lowyers .lowyers-list li img {
   width: 100%;
@@ -285,10 +310,36 @@ body {
   width: 100%;
   margin: 0 auto;
 }
+@media screen and (max-width: 980px) {
+  #guide .guide-list {
+    display: -webkit-box;
+    /*--- Androidブラウザ用 ---*/
+    display: -ms-flexbox;
+    /*--- IE10 ---*/
+    display: -webkit-flex;
+    /*--- safari（PC）用 ---*/
+    display: flex;
+    -webkit-box-pack: justify;
+    /*--- Androidブラウザ用 ---*/
+    -ms-flex-pack: justify;
+    /*--- IE10 ---*/
+    -webkit-justify-content: center;
+    /*--- safari（PC）用 ---*/
+    justify-content: center;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+  }
+}
 #guide .guide-list li {
   max-width: 516px;
   width: 45%;
   margin-bottom: 20px;
+}
+@media screen and (max-width: 980px) {
+  #guide .guide-list li {
+    max-width: 1053px;
+    width: 95%;
+  }
 }
 #guide .guide-list li a:hover {
   opacity: .7;
@@ -332,9 +383,34 @@ body {
   width: 100%;
   margin: 0 auto;
 }
+@media screen and (max-width: 980px) {
+  #contact .contact-list {
+    display: -webkit-box;
+    /*--- Androidブラウザ用 ---*/
+    display: -ms-flexbox;
+    /*--- IE10 ---*/
+    display: -webkit-flex;
+    /*--- safari（PC）用 ---*/
+    display: flex;
+    -webkit-box-pack: justify;
+    /*--- Androidブラウザ用 ---*/
+    -ms-flex-pack: justify;
+    /*--- IE10 ---*/
+    -webkit-justify-content: center;
+    /*--- safari（PC）用 ---*/
+    justify-content: center;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+  }
+}
 #contact .contact-list li {
   width: 480px;
   margin-bottom: 40px;
+}
+@media screen and (max-width: 980px) {
+  #contact .contact-list li {
+    width: 95%;
+  }
 }
 #contact .contact-list li a:hover {
   opacity: .7;
@@ -428,6 +504,7 @@ body {
 #footer #footer-inner #g-nav .sub-menu {
   clear: both;
   margin-left: 457px;
+  display: inline-block;
 }
 #footer #footer-inner #g-nav .sub-menu li {
   padding: 5px 30px;
@@ -467,6 +544,8 @@ body {
 #fv img {
   max-width: 1404px;
   width: 100%;
+  display: block;
+  margin: 0 auto;
 }
 
 #fv2 {
@@ -554,7 +633,8 @@ body {
   padding: 70px 0 50px;
 }
 #guide #guide-inner {
-  width: 1053px;
+  max-width: 1053px;
+  width: 100%;
   margin: 0 auto;
 }
 #guide #guide-inner .iframe {
@@ -569,7 +649,6 @@ body {
 #guide #guide-inner img {
   display: block;
   width: 100%;
-  max-width: 849px;
   margin: 40px auto;
 }
 
@@ -604,8 +683,33 @@ body {
   flex-wrap: wrap;
   -ms-flex-wrap: wrap;
 }
+@media screen and (max-width: 980px) {
+  #introduction #introduction-inner .lowyers-list {
+    display: -webkit-box;
+    /*--- Androidブラウザ用 ---*/
+    display: -ms-flexbox;
+    /*--- IE10 ---*/
+    display: -webkit-flex;
+    /*--- safari（PC）用 ---*/
+    display: flex;
+    -webkit-box-pack: justify;
+    /*--- Androidブラウザ用 ---*/
+    -ms-flex-pack: justify;
+    /*--- IE10 ---*/
+    -webkit-justify-content: center;
+    /*--- safari（PC）用 ---*/
+    justify-content: center;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+  }
+}
 #introduction #introduction-inner .lowyers-list li {
   width: 33.33333%;
+}
+@media screen and (max-width: 980px) {
+  #introduction #introduction-inner .lowyers-list li {
+    width: 1053px;
+  }
 }
 #introduction #introduction-inner .lowyers-list li img {
   width: 100%;
@@ -747,19 +851,46 @@ body {
 #lowyer-intoroduction #lowyer-intoroduction-inner .flL {
   float: left;
 }
+@media screen and (max-width: 980px) {
+  #lowyer-intoroduction #lowyer-intoroduction-inner .flL {
+    float: none;
+    margin-top: 30px;
+  }
+}
 #lowyer-intoroduction #lowyer-intoroduction-inner .flR {
   float: right;
+}
+@media screen and (max-width: 980px) {
+  #lowyer-intoroduction #lowyer-intoroduction-inner .flR {
+    float: none;
+    margin-top: 30px;
+  }
 }
 #lowyer-intoroduction #lowyer-intoroduction-inner .thumbnail {
   margin-right: 40px;
 }
+@media screen and (max-width: 980px) {
+  #lowyer-intoroduction #lowyer-intoroduction-inner .thumbnail {
+    margin-right: 0;
+  }
+}
 #lowyer-intoroduction #lowyer-intoroduction-inner .thumbnail02 {
   margin-left: 40px;
+}
+@media screen and (max-width: 980px) {
+  #lowyer-intoroduction #lowyer-intoroduction-inner .thumbnail02 {
+    margin-left: 0;
+  }
 }
 #lowyer-intoroduction #lowyer-intoroduction-inner .center {
   max-width: 470px;
   width: 100%;
   margin-top: 40px;
+}
+@media screen and (max-width: 980px) {
+  #lowyer-intoroduction #lowyer-intoroduction-inner .center {
+    max-width: 100%;
+  }
 }
 #lowyer-intoroduction #lowyer-intoroduction-inner .discript {
   color: #f1f1f1;
@@ -791,8 +922,19 @@ body {
   border-bottom: 1px dotted #ccc;
   padding: 15px 0;
 }
+@media screen and (max-width: 980px) {
+  #personality #personality-inner ul li {
+    font-size: 14px;
+  }
+}
 #personality #personality-inner ul li span {
   font-weight: bold;
+}
+@media screen and (max-width: 980px) {
+  #personality #personality-inner ul li span {
+    display: block;
+    margin-bottom: 28px;
+  }
 }
 
 #media {
@@ -942,6 +1084,207 @@ body {
   margin: 0 10px;
   background-color: #000;
   vertical-align: middle;
+}
+
+/*--------------------------------------------------------------------
+  sitemap
+--------------------------------------------------------------------*/
+#sitemap {
+  width: 1053px;
+  margin: 100px auto;
+  display: -webkit-box;
+  /*--- Androidブラウザ用 ---*/
+  display: -ms-flexbox;
+  /*--- IE10 ---*/
+  display: -webkit-flex;
+  /*--- safari（PC）用 ---*/
+  display: flex;
+  -webkit-box-pack: justify;
+  /*--- Androidブラウザ用 ---*/
+  -ms-flex-pack: justify;
+  /*--- IE10 ---*/
+  -webkit-justify-content: space-between;
+  /*--- safari（PC）用 ---*/
+  justify-content: space-between;
+  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+}
+#sitemap .sitemap-list {
+  width: 30%;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 980px) {
+  #sitemap .sitemap-list {
+    width: 95%;
+  }
+}
+#sitemap .sitemap-list h2 {
+  background: #181b39;
+  font-size: 18px;
+  text-align: center;
+}
+#sitemap .sitemap-list h2 a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 20px 40px;
+}
+#sitemap .sitemap-list h2 a:hover {
+  opacity: .7;
+}
+#sitemap .sitemap-list ul {
+  margin-top: 30px;
+}
+#sitemap .sitemap-list ul li {
+  margin-bottom: 20px;
+  margin-left: 60px;
+}
+#sitemap .sitemap-list ul li a {
+  color: #000;
+  text-decoration: none;
+}
+#sitemap .sitemap-list ul li a:hover {
+  text-decoration: underline;
+}
+#sitemap .sitemap-list ul li:before {
+  content: url(../img/sitemap/indicator_list_lawyers.png);
+  margin-right: 15px;
+}
+
+/*--------------------------------------------------------------------
+  contact
+--------------------------------------------------------------------*/
+#tel-contact {
+  background: #181b39;
+  padding: 70px 0 50px;
+}
+#tel-contact #tel-contact-inner {
+  width: 1053px;
+  margin: 0 auto;
+}
+#tel-contact #tel-contact-inner h2 {
+  text-align: center;
+  padding: 15px 0;
+  background: #fff;
+  font-size: 40px;
+  color: #d1b22f;
+}
+#tel-contact #tel-contact-inner .tel-number {
+  color: #fff;
+  padding: 40px 40px 0;
+  line-height: 1.7;
+  letter-spacing: 1px;
+  font-family: Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
+  width: 600px;
+  margin: 30px auto 0;
+  font-size: 32px;
+  position: relative;
+  text-align: right;
+}
+#tel-contact #tel-contact-inner .tel-number:before {
+  content: url(../img/contact/img_phone.png);
+  margin-right: 20px;
+  position: absolute;
+  top: 24%;
+  left: 30px;
+}
+
+#mail-contact {
+  padding: 70px 0 50px;
+}
+#mail-contact #mail-contact-inner {
+  width: 1053px;
+  margin: 0 auto;
+}
+#mail-contact #mail-contact-inner h2 {
+  text-align: center;
+  padding: 15px 0;
+  background: #181b39;
+  font-size: 40px;
+  color: #d1b22f;
+}
+#mail-contact #mail-contact-inner .input-form {
+  width: 100%;
+  margin: 20px auto 0;
+}
+#mail-contact #mail-contact-inner .input-form th {
+  text-align: left;
+  vertical-align: top;
+  width: 258px;
+  height: 55px;
+  line-height: 1.7;
+  padding: 15px 10px 5px 20px;
+  background: url(../img/contact/inquery_listbox.png) no-repeat;
+  font-size: 14px;
+  border-top: 1px solid #181b39;
+}
+#mail-contact #mail-contact-inner .input-form td {
+  padding: 15px 20px 15px;
+  line-height: 1.7;
+}
+#mail-contact #mail-contact-inner .input-form td .terms {
+  height: 140px;
+  overflow: auto;
+  padding: 10px;
+  font-size: 12px;
+  background: #fff;
+}
+#mail-contact #mail-contact-inner .input-form td input[type="text"], #mail-contact #mail-contact-inner .input-form td input[type="tel"], #mail-contact #mail-contact-inner .input-form td input[type="email"] {
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+}
+#mail-contact #mail-contact-inner .submit {
+  width: 349px;
+  margin: 0 auto;
+  cursor: pointer;
+  display: block;
+}
+#mail-contact #mail-contact-inner .submit:hover {
+  opacity: .7;
+}
+
+/*--------------------------------------------------------------------
+  archive
+--------------------------------------------------------------------*/
+#archive {
+  background: #181b39;
+}
+#archive #archive-inner {
+  width: 1053px;
+  margin: 0 auto;
+  padding: 50px 0;
+  background: #fff;
+  font-family: Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
+}
+#archive #archive-inner .date-wrapper {
+  padding: 0 130px;
+}
+#archive #archive-inner .date {
+  padding: 7px 15px;
+  background: #181b39;
+  color: #d1b22f;
+  display: inline-block;
+}
+#archive #archive-inner .title {
+  font-size: 24px;
+  letter-spacing: 2px;
+  padding: 20px 130px 20px;
+  line-height: 1.9;
+  text-decoration: underline;
+}
+#archive #archive-inner .title a {
+  color: #333;
+}
+#archive #archive-inner .contents {
+  padding: 0 60px 40px;
+  margin: 0 70px 30px;
+  border-bottom: 1px dotted #ccc;
+  color: #777;
+  line-height: 1.9;
+}
+#archive #archive-inner .contents p {
+  color: #777;
 }
 
 /*# sourceMappingURL=style.css.map */
