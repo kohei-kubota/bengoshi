@@ -2,9 +2,9 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<title></title>
-<meta name="keywords" content="">
-<meta name="description" content="">
+<title>不動法律事務所｜新宿の交渉に強い弁護士</title>
+<meta name="keywords" content="東京,新宿,四ツ谷,弁護士,法律事務所,法律相談,費用,法テラス,離婚,男女問題,詐欺,消費者被害,労働,債権回収,借金,債務整理,交通事故,遺産,相続,遺言書,事業継承,国際,外国人,インターネット,不動産,建築,民泊,Airbnb,企業法務,顧問,クレーム,刑事">
+<meta name="description" content="３名の弁護士（若井亮・小杉俊介・吉田圭二）による新宿の法律事務所です。どんなに難しいと思われる交渉でも、解決へと導きます。ご相談のご予約は24時間受け付けています。問題がこじれてしまう前に、朝でも夜でも、いつでもご連絡ください。">
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 
 <link rel="stylesheet" href="css/style.css">
@@ -25,7 +25,7 @@
 					</li>
 					<li id="belong-lowyers">
 						<div class="make_border"></div>
-						<a href="/wakai">弁護士のご紹介</a>
+						<a href="javascript:void(0)">弁護士のご紹介</a>
 						<ul class="sub-menu">
 							<li><a href="/wakai">弁護士・若井 亮</a></li>
 							<li><a href="/kosugi">弁護士・小杉 俊介</a></li>
@@ -113,7 +113,7 @@
 		</div>
 	</section>
 
-	<section id="guide">
+	<section id="top-guide">
 		<div id="guide-inner">
 			<h2><img src="img/home/guide.png" alt=""></h2>
 			<ul class="guide-list">
@@ -170,6 +170,9 @@
 					</li>
 					<li>
 						<a href="/sitemap">サイトマップ</a>
+					</li>
+					<li>
+						<a href="/info">お知らせ</a>
 					</li>
 				</ul>
 				<div class="make_border"></div>

@@ -51,7 +51,7 @@
 		</div>
 	</section>
 
-	<section id="guide">
+	<section id="top-guide">
 		<div id="guide-inner">
 			<h2><img src="/img/home/guide.png" alt=""></h2>
 			<ul class="guide-list">

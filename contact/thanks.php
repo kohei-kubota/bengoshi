@@ -1,8 +1,52 @@
+<?php
+if(isset($_POST['name'] )){
+}
+else{
+    header("Location: /");
+    exit();
+}
+
+try
+{
+    $name = htmlspecialchars($_POST['name']);
+    $tel = htmlspecialchars($_POST['tel']);
+    $email = htmlspecialchars($_POST['email']);
+    $request = htmlspecialchars($_POST['request']);
+
+
+
+    mb_language('ja');
+    mb_internal_encoding( "utf-8" );
+    // 送信先（管理人のメールアドレス）
+    $to = "info@fudolaw.com";
+    // 件名
+    $subject = "【不動法律事務所】お問合せフォームが送信されました。";
+    // メールの本文
+    $message = "
+■お問い合わせ内容
+￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣
+    \nお名前: " . $name .
+    "\n電話番号: " . $tel .
+    "\nメールアドレス: " . $email .
+    "\nご確認内容の種類: " . $request;
+    // メール送信（mb_ マルチバイト、成功すれば true、失敗すれば return する）
+    $header="From: " .mb_encode_mimeheader("不動法律事務所");
+    //$header.="\n";
+    //$header.="Cc:otoiawase@ml.gmo-ap.jp";
+    // メール送信（mb_ マルチバイト、成功すれば true、失敗すれば return する）
+    mb_send_mail($to, $subject, $message ,$header);
+
+}
+catch (Exception $e)
+{
+    print'ただ今障害により大変ご迷惑おかけしております。';
+}
+?>
 <!doctype html>
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<title>不動法律事務所｜東京・新宿｜弁護士｜弁護士費用</title>
+<title>不動法律事務所｜東京・新宿｜お問い合わせ</title>
 <meta name="keywords" content="東京,新宿,四ツ谷,弁護士,法律事務所,法律相談,費用,法テラス,離婚,男女問題,詐欺,消費者被害,労働,債権回収,借金,債務整理,交通事故,遺産,相続,遺言書,事業継承,国際,外国人,インターネット,不動産,建築,民泊,Airbnb,企業法務,顧問,クレーム,刑事">
 <meta name="description" content="３名の弁護士（若井亮・小杉俊介・吉田圭二）による新宿の法律事務所です。どんなに難しいと思われる交渉でも、解決へと導きます。ご相談のご予約は24時間受け付けています。問題がこじれてしまう前に、朝でも夜でも、いつでもご連絡ください。">
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -47,36 +91,19 @@
 	</header>
 
 	<section id="fv">
-		<img src="/img/cost/banner_fee.png" alt="">
+		<img src="/img/contact/banner_inquery.png" alt="">
 	</section>
 
 	<section id="bread-crumb">
 		<ul class="clearfix">
 			<li><a href="/">TOP</a>>></li>
-			<li>弁護士費用</li>
+			<li>お問い合わせ</li>
 		</ul>
 	</section>
 
-	<section id="cost">
-		<div id="cost-inner">
-			<h2>法律相談料</h2>
-			<p class="concept">
-				初回法律相談無料<br>
-				２回目以降、30分ごとに5,000円
-			</p>
-		</div>
-	</section>
-
-	<section id="civil-proceedings">
-		<div id="civil-proceedings-inner">
-			<h2>民事事件・刑事事件</h2>
-			<p class="concept">
-				着手金・報酬金・日当・実費（郵券・印紙等）の費目ごとに、無料相談時に案件の性質等を勘案し、お見積もりいたします。
-			</p>
-			<p class="concept">
-				お支払い方法につきましては、ご依頼者様とご相談の上、決定させていただきます。<br>
-				ご依頼者様に合わせた形で提案できる仕組みを取っており、事案に応じて柔軟に対応することが可能ですので、お気軽にご相談ください。
-			</p>
+	<section id="mail-contact">
+		<div id="mail-contact-inner">
+			<h2>送信完了しました</h2>
 		</div>
 	</section>
 
@@ -103,7 +130,7 @@
 					<li>
 						<a href="/sitemap">サイトマップ</a>
 					</li>
-					<li>
+          <li>
 						<a href="/info">お知らせ</a>
 					</li>
 				</ul>
@@ -122,5 +149,6 @@
 	</section>
 
 	<script src="/js/function.js"></script>
+	<script src="/js/validate.js"></script>
 </body>
 </html>

@@ -2,9 +2,9 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<title></title>
-<meta name="keywords" content="">
-<meta name="description" content="">
+<title>不動法律事務所｜東京・新宿｜お問い合わせ</title>
+<meta name="keywords" content="東京,新宿,四ツ谷,弁護士,法律事務所,法律相談,費用,法テラス,離婚,男女問題,詐欺,消費者被害,労働,債権回収,借金,債務整理,交通事故,遺産,相続,遺言書,事業継承,国際,外国人,インターネット,不動産,建築,民泊,Airbnb,企業法務,顧問,クレーム,刑事">
+<meta name="description" content="３名の弁護士（若井亮・小杉俊介・吉田圭二）による新宿の法律事務所です。どんなに難しいと思われる交渉でも、解決へと導きます。ご相談のご予約は24時間受け付けています。問題がこじれてしまう前に、朝でも夜でも、いつでもご連絡ください。">
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 
 <link rel="stylesheet" href="../css/style.css">
@@ -22,7 +22,7 @@
 					</li>
 					<li id="belong-lowyers">
 						<div class="make_border"></div>
-						<a href="/wakai">弁護士のご紹介</a>
+						<a href="javascript:void(0)">弁護士のご紹介</a>
 						<ul class="sub-menu">
 							<li><a href="/wakai">弁護士・若井 亮</a></li>
 							<li><a href="/kosugi">弁護士・小杉 俊介</a></li>
@@ -69,39 +69,39 @@
 	<section id="mail-contact">
 		<div id="mail-contact-inner">
 			<h2>メールでのお問い合わせ</h2>
-			<form action="" method="post">
+			<form action="/contact/thanks.php" method="post" id="form-post">
 				<table class="input-form">
 					<tr>
 						<th>お名前</th>
-						<td><input type="text" name="name"></td>
+						<td><input type="text" name="name" class="item-name"></td>
 					</tr>
 					<tr>
 						<th>電話番号</th>
-						<td><input type="text" name="tel"></td>
+						<td><input type="text" name="tel" class="item-tel"></td>
 					</tr>
 					<tr>
 						<th>メールアドレス</th>
-						<td><input type="text" name="email"></td>
+						<td><input type="text" name="email" class="item-email"></td>
 					</tr>
 					<tr>
 						<th>ご確認内容の種類</th>
 						<td>
-							<select>
-								<option>離婚・男女問題</option>
-								<option>交通事故</option>
-								<option>遺産相続</option>
-								<option>詐欺・消費者被害</option>
-								<option>不動産・建築</option>
-								<option>債務整理・破産</option>
-								<option>労働問題</option>
-								<option>刑事事件</option>
-								<option>企業法務</option>
-								<option>そのほか</option>
+							<select name="request">
+								<option value="離婚・男女問題">離婚・男女問題</option>
+								<option value="交通事故">交通事故</option>
+								<option value="遺産相続">遺産相続</option>
+								<option value="詐欺・消費者被害">詐欺・消費者被害</option>
+								<option value="不動産・建築">不動産・建築</option>
+								<option value="債務整理・破産">債務整理・破産</option>
+								<option value="労働問題">労働問題</option>
+								<option value="刑事事件">刑事事件</option>
+								<option value="企業法務">企業法務</option>
+								<option value="そのほか">そのほか</option>
 							</select>
 						</td>
 					</tr>
 					<tr>
-						<th>個人情報の取り扱いについて</th>
+						<th class="top">個人情報の取り扱いについて</th>
 						<td>
 							<div class="terms">
 								個人情報の取り扱いについて
@@ -132,11 +132,12 @@
 					<tr>
 						<th>個人情報の同意</th>
 						<td>
-							<input type="checkbox">当事務局の個人情報保護方針に同意する
+							<input type="checkbox" name="privacy[]" class="privacy">当事務局の個人情報保護方針に同意する
+							<span class="statement"></span>
 						</td>
 					</tr>
 				</table>
-				<p class="submit"><img src="/img/contact/inquery_btn_send.png"></p>
+				<p class="submit" id="submit"><img src="/img/contact/inquery_btn_send.png"></p>
 			</form>
 		</div>
 	</section>
@@ -150,7 +151,7 @@
 						<a href="/guide">事務所のご案内</a>
 					</li>
 					<li>
-						<a href="/wakai">弁護士のご紹介</a>
+						<a href="javascript:void(0)">弁護士のご紹介</a>
 					</li>
 					<li>
 						<a href="/degree">取り扱い分野</a>
@@ -163,6 +164,9 @@
 					</li>
 					<li>
 						<a href="/sitemap">サイトマップ</a>
+					</li>
+					<li>
+						<a href="/info">お知らせ</a>
 					</li>
 				</ul>
 				<div class="make_border"></div>
@@ -180,5 +184,6 @@
 	</section>
 
 	<script src="/js/function.js"></script>
+	<script src="/js/validate.js"></script>
 </body>
 </html>

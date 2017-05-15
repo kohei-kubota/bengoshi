@@ -277,19 +277,19 @@ body {
 /*--------------------------------------------------------------------
   guide
 --------------------------------------------------------------------*/
-#guide {
+#top-guide {
   background: #ccc;
-  padding-top: 60px;
+  padding: 60px 0 40px;
 }
-#guide h2 {
+#top-guide h2 {
   text-align: center;
   padding-bottom: 30px;
 }
-#guide h2 img {
+#top-guide h2 img {
   max-width: 1053px;
   width: 100%;
 }
-#guide .guide-list {
+#top-guide .guide-list {
   display: -webkit-box;
   /*--- Androidブラウザ用 ---*/
   display: -ms-flexbox;
@@ -311,7 +311,7 @@ body {
   margin: 0 auto;
 }
 @media screen and (max-width: 980px) {
-  #guide .guide-list {
+  #top-guide .guide-list {
     display: -webkit-box;
     /*--- Androidブラウザ用 ---*/
     display: -ms-flexbox;
@@ -330,21 +330,21 @@ body {
     -ms-flex-wrap: wrap;
   }
 }
-#guide .guide-list li {
+#top-guide .guide-list li {
   max-width: 516px;
-  width: 45%;
+  width: 100%;
   margin-bottom: 20px;
 }
 @media screen and (max-width: 980px) {
-  #guide .guide-list li {
+  #top-guide .guide-list li {
     max-width: 1053px;
-    width: 95%;
+    width: 100%;
   }
 }
-#guide .guide-list li a:hover {
+#top-guide .guide-list li a:hover {
   opacity: .7;
 }
-#guide .guide-list li img {
+#top-guide .guide-list li img {
   width: 100%;
 }
 
@@ -481,13 +481,13 @@ body {
 }
 #footer #footer-inner #g-nav .footer-menu li {
   float: left;
-  padding: 0 20px;
+  padding: 0 15px;
 }
 #footer #footer-inner #g-nav .footer-menu li a {
   display: block;
   color: #fff;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 16px;
   padding-top: 15px;
   letter-spacing: 1px;
 }
@@ -495,7 +495,7 @@ body {
   opacity: .7;
 }
 #footer #footer-inner #g-nav .make_border {
-  width: 850px;
+  width: 825px;
   height: 1px;
   background: #fff;
   margin: 20px 40px 0 0;
@@ -503,7 +503,7 @@ body {
 }
 #footer #footer-inner #g-nav .sub-menu {
   clear: both;
-  margin-left: 457px;
+  margin-left: 465px;
   display: inline-block;
 }
 #footer #footer-inner #g-nav .sub-menu li {
@@ -513,7 +513,7 @@ body {
   display: block;
   color: #fff;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 14px;
   padding-top: 15px;
   letter-spacing: 1px;
 }
@@ -1171,7 +1171,7 @@ body {
 }
 #tel-contact #tel-contact-inner .tel-number {
   color: #fff;
-  padding: 40px 40px 0;
+  padding: 52px 40px 0;
   line-height: 1.7;
   letter-spacing: 1px;
   font-family: Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
@@ -1207,23 +1207,34 @@ body {
   width: 100%;
   margin: 20px auto 0;
 }
+#mail-contact #mail-contact-inner .input-form tr:first-of-type th {
+  background: url(../img/contact/inquery_listbox.png) no-repeat top left;
+  padding-top: 17px;
+}
+#mail-contact #mail-contact-inner .input-form th.top {
+  background: url(../img/contact/inquery_listbox.png) no-repeat top left;
+  background-position: 0 4%;
+}
 #mail-contact #mail-contact-inner .input-form th {
   text-align: left;
   vertical-align: top;
-  width: 258px;
+  width: 310px;
   height: 55px;
   line-height: 1.7;
-  padding: 15px 10px 5px 20px;
-  background: url(../img/contact/inquery_listbox.png) no-repeat;
+  padding: 27px 10px 5px 20px;
+  background: url(../img/contact/inquery_listbox.png) no-repeat center left;
   font-size: 14px;
-  border-top: 1px solid #181b39;
+  box-sizing: border-box;
 }
 #mail-contact #mail-contact-inner .input-form td {
   padding: 15px 20px 15px;
   line-height: 1.7;
+  background: #e4e4e4;
+  border-bottom: 21px solid #fff;
+  box-sizing: border-box;
 }
 #mail-contact #mail-contact-inner .input-form td .terms {
-  height: 140px;
+  height: 250px;
   overflow: auto;
   padding: 10px;
   font-size: 12px;
@@ -1233,10 +1244,12 @@ body {
   width: 100%;
   padding: 5px;
   box-sizing: border-box;
+  border: none;
+  background: #e4e4e4;
 }
 #mail-contact #mail-contact-inner .submit {
   width: 349px;
-  margin: 0 auto;
+  margin: 40px auto 0;
   cursor: pointer;
   display: block;
 }

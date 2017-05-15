@@ -7,7 +7,7 @@
 					<a href="/guide">事務所のご案内</a>
 				</li>
 				<li>
-					<a href="/wakai">弁護士のご紹介</a>
+					<a href="javascript:void(0)">弁護士のご紹介</a>
 				</li>
 				<li>
 					<a href="/degree">取り扱い分野</a>
@@ -20,6 +20,9 @@
 				</li>
 				<li>
 					<a href="/sitemap">サイトマップ</a>
+				</li>
+				<li>
+					<a href="/info">お知らせ</a>
 				</li>
 			</ul>
 			<div class="make_border"></div>
